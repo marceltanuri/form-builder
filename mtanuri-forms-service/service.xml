@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_2_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="br.com.mtanuri.forms">
+	<namespace>MTANURI</namespace>
+	<entity local-service="true" name="Forms" remote-service="false" uuid="false">
+
+		<!-- PK fields -->
+		<column name="formId" primary="true" type="long" />
+
+		<!-- Group instance -->
+		<column name="groupId" type="long" />
+
+		<!-- Other fields -->
+		<column name="formName" type="String" />
+		<column name="createDateTime" type="long" />
+		<column name="content" type="String"/> <!--CLOB column that storage all form fields values (content) in JSON Format -->
+		<column name="files" type="String" /> <!-- FileEntry IDs separated by semicolon  -->
+
+		<!-- Finder methods -->
+
+		<finder name="GroupId" return-type="Collection">
+			<finder-column name="groupId" />
+		</finder>
+
+		<finder name="G_F" return-type="Collection">
+			<finder-column name="groupId" />
+			<finder-column name="formName" />
+		</finder>
+
+	</entity>
+</service-builder>

@@ -1,0 +1,4 @@
+Bundle-Name: mtanuri-forms-web
+Bundle-SymbolicName: br.com.mtanuri.forms.web
+Bundle-Version: 1.0.0
+Export-Package: br.com.mtanuri.forms.web.constants

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="br.com.mtanuri.forms.model.Forms">
+		<field name="formId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="formName" type="String" />
+		<field name="createDateTime" type="long" />
+		<field name="content" type="String" />
+		<field name="files" type="String" />
+	</model>
+</model-hints>

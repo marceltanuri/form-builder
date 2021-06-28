@@ -1,0 +1,10 @@
+Bundle-Name: forms-api
+Bundle-SymbolicName: br.com.mtanuri.forms.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	br.com.mtanuri.forms.exception,\
+	br.com.mtanuri.forms.model,\
+	br.com.mtanuri.forms.service,\
+	br.com.mtanuri.forms.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../mtanuri-forms-service/service.xml
