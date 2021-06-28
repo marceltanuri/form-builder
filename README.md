@@ -25,3 +25,7 @@ Essa solução combina ES6 + PortletMVC + ServiceBuilder + DLAppLocalService + M
 
 ## Melhorias
 1. O mapeamento das mensagens localizadas para função JS ainda é manual, pode-se automatizar
+
+## Suporte
+* Testado em Liferay DXP 7.2
+* Ao usando target.workspace pode-se remover o numero de versao fixo nos arquivos `gradle.build`
